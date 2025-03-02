@@ -1,0 +1,124 @@
+.founder-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+  }
+  
+  .founder-content {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    padding: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .founder-content:hover {
+    transform: translateY(-5px);
+  }
+  
+  .founder-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+    position: relative;
+  }
+  
+  .founder-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .founder-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .founder-text-container {
+    flex: 2;
+  }
+  
+  .founder-name {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2d3748;
+    font-weight: 600;
+  }
+  
+  .founder-description {
+    line-height: 1.8;
+    color: #4a5568;
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .founder-socials {
+    margin-top: 25px;
+  }
+  
+  .social-icons-wrapper {
+    display: flex;
+  }
+  
+  .social-link {
+    margin-right: 20px;
+    font-size: 28px;
+    color: #666; /* Default icon color */
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Specific hover colors for each icon */
+  .social-link:nth-child(1):hover { /* Instagram */
+    color: #e1306c; /* Instagram pink */
+    transform: translateY(-3px);
+  }
+  
+  .social-link:nth-child(2):hover { /* LinkedIn */
+    color: #0077b5; /* LinkedIn blue */
+    transform: translateY(-3px);
+  }
+  
+  .social-link:nth-child(3):hover { /* YouTube */
+    color: #ff0000; /* YouTube red */
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 768px) {
+    .founder-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+  
+    .founder-image-container {
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+  
+    .founder-image {
+      width: 220px;
+      height: 220px;
+    }
+  
+    .founder-text-container {
+      text-align: center;
+    }
+  
+    .social-icons-wrapper {
+      justify-content: center;
+    }
+  }
