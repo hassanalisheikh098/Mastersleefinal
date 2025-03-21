@@ -21,6 +21,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Universities from "./components/Universities";
 import Countries from "./components/Countries";  
 import Resources from "./components/Resources";
+import AddProgram from "./components/Admin";
 
 function Home() {
   return (
@@ -55,6 +56,7 @@ function App() {
             <Route path="/universities/:name" element={<UniversityPage />} />
             <Route path="/countries" element={<Countries />} />
             <Route path="/resources" element={<Resources />} /> 
+             <Route path="/admin" element={<AddProgram />} /> 
           </Routes>
         </main>
         <Footer />
