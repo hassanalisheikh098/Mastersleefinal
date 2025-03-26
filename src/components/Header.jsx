@@ -52,12 +52,18 @@ export default function Header() {
             <Globe className="h-5 w-5 text-gray-600" />
 
             {user ? ( // Check if user is signed in
-              <button
-                onClick={handleSignOut} // Updated to use handleSignOut
-                className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700"
-              >
-                Sign Out
-              </button>
+              user?.email === 'hassanalisheikh098@gmail.com' ? ( // Check if user is admin
+                <Link to="/secretadmin" className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">
+                  Admin Dashboard
+                </Link>
+              ) : (
+                <button
+                  onClick={handleSignOut} // Updated to use handleSignOut
+                  className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700"
+                >
+                  Sign Out
+                </button>
+              )
             ) : (
               <Link to="/signin" className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">
                 Sign In
