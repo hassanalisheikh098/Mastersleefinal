@@ -56,7 +56,7 @@ function App() {
             <Route path="/universities/:name" element={<UniversityPage />} />
             <Route path="/countries" element={<Countries />} />
             <Route path="/resources" element={<Resources />} /> 
-             <Route path="/admin" element={<AddProgram />} /> 
+             <Route path="/secretadmin" element={<AddProgram />} /> 
           </Routes>
         </main>
         <Footer />
